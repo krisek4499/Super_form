@@ -1,4 +1,47 @@
 
+html, body {
+	background-color: #fff;
+	color: #000;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.top {
+  background-color: #888;
+  width: 100%;
+  height:240px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+
+.NAGLOWEK {
+	background-color: #888;
+}
+
+.MENU {
+	width: 150px;
+	float: left;
+	overflow: hidden;
+	background-color: #fff;
+}
+
+.TRESC {
+  width:25%;
+  height:500px;
+	float: left;
+
+	background-color: #fff;
+}
+
+.STOPKA {
+	clear: both;
+  width: 100%;
+  height:240px;
+	background-color: #888;
+}
+
 /***********name*****/
 
 
@@ -90,7 +133,7 @@ input[name=number]:not([value=""]) + label{ content:''; animation:przesun 0.1s l
 @keyframes przesun
 {
   0% { transform:translateY(0px); }
-  100% { transform:translateX(-30px) translateY(-50px) scale(.70);  color:#01a725;}
+  100% { transform:translateX(-100px) translateY(-50px) scale(.70);  color:#01a725;}
 }
 
 
