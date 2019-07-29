@@ -1,0 +1,72 @@
+<html>
+ <head>
+   <title>Formularz ajax</title>
+   <meta charset="utf-8">
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <link href="apsss.css" rel="stylesheet">
+   <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+   <script src="js/validation.js" type="text/javascript"></script>
+ </head>
+  <div id="mojdiv"> </div>
+ <body>
+   <!--<button id="open-contact-btn" class="about-link btn-primary">
+   <i class="fa fa-envelope-o" aria-hidden="true"></i> Formularz kontaktowy
+   </button>
+   <button type="button" id="close-contact-btn" class="close-btn btn-secondary">
+    <i class="fa fa-times close-form" aria-hidden="false">close</i>
+   </button>-->
+   <form class="emailForm" method="POST" action="emailforms.php">
+     <div id="hostingFastForm" class=" contact-form-new"></div>
+      <div class="container">
+       <h2 class="headerSection">Skontaktuj się z nami</h2>
+       <div class="row">
+          <div class="col-12 col-md-4">
+            <fieldset  class="schedulerr-border">
+             <legend class="scheduler-border" ></legend>
+              <input type="text" name="name"  class="form-control" required="required" onkeyup="this.setAttribute('value', this.value);" value="" />
+               <label for="text">Imie <i>*</i></label>
+            </fieldset>
+          </div>
+          <div class="col-12 col-md-4">
+           <fieldset  class="schedulerr-border">
+             <legend class="scheduler-border"></legend>
+              <input type="text" name="surname" class="form-control" required="required" onkeyup="this.setAttribute('value', this.value);" value="" />
+               <label for="text">Nazwisko <i>*</i></label>
+           </fieldset>
+         </div>
+          <div class="col-12 col-md-4">
+           <fieldset  class="schedulerr-border">
+             <legend class="scheduler-border"></legend>
+              <input type="text" name="number" class="form-control" required="required"  onkeyup="this.setAttribute('value', this.value);"value="" pattern="[0-9]*[0-9]{8}"/>
+               <label for="text">Numer <i>*</i></label>
+           </fieldset>
+         </div>
+          <div class="col-12 col-md-4">
+           <fieldset  class="schedulerr-border">
+             <legend class="scheduler-border">Zawód</legend>
+              <input name="trade" class="form-control" placeholder="Wpisz tu swój zawód" required>
+           </fieldset>
+         </div>
+         <div class="col-12 col-md-4">
+           <fieldset  class="schedulerr-border">
+             <legend class="scheduler-border">Data urodzenia</legend>
+             <input name="date" class="form-control" type="date" placeholder="Wybierz swoją date urodzenia" required>
+           </fieldset>
+         </div>
+         <div class="col-12 col-md-4">
+           <fieldset  class="schedulerr-border">
+             <legend class="scheduler-border">Email</legend>
+              <input name="email" class="form-control" type="email" placeholder="Wpisz tu swój adres email" required>
+           </fieldset>
+         </div>
+         <div class="col-12 col-md-12 text-center">
+           <div class="emailFormAlert"></div>
+            <fieldset>
+             <input id="submit" type="submit" value="Wyślij" class="btn btn-primary w-25"/>
+            </fieldset>
+         </div>
+       </div>
+     </div>
+   </form>
+ </body>
+</html>
